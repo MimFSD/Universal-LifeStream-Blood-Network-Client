@@ -62,6 +62,7 @@ const ContentManagement = () => {
         });
     }
 
+
     const sortStatus = (status) => {
         // console.log(status);
         if (status != 'all') {
@@ -71,12 +72,14 @@ const ContentManagement = () => {
             console.log(filtereStatus);
             setAllContents(filtereStatus);
         }
+
         else {
             setAllContents(allContentsTo);
         }
     };
     // console.log(requestList);
 
+    
     return (
         <div className="my-6">
             {/* <h2 className="text-4xl font-bold text-[#ff0054] text-center">Content Management</h2> */}
