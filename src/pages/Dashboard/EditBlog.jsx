@@ -6,7 +6,7 @@ import useAxiosSecure from '../../hooks/useAxiosSecure';
 import Swal from 'sweetalert2';
 import { useLoaderData, useNavigate } from 'react-router-dom';
 
-// image key 
+        // image key 
 const image_hosting_key = import.meta.env.VITE_Image_Hosting_Key;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
@@ -29,7 +29,7 @@ const EditBlog = () => {
     });
 
     useEffect(() => {
-        // Register the detail_content field manually
+                    // Register the detail_content field manually
         register('detail_content', { required: true });
     }, [register]);
 
