@@ -14,14 +14,13 @@ const AddBlog = () => {
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
 
-    // ======
     const editor = useRef(null);
     const [content, setContent] = useState('');
 
     const { register, handleSubmit, setValue, formState: { errors } } = useForm();
 
     useEffect(() => {
-        // Register the detail_content field manually
+                // Register the detail_content field manually
         register('detail_content', { required: true });
     }, [register]);
 
@@ -30,6 +29,7 @@ const AddBlog = () => {
         data.detail_content = content;
         console.log(data.detail_content);
 
+
         // image upload to imgbb and then get an URL
         const formData = new FormData();
         formData.append('image', data.photo[0]);
@@ -37,8 +37,7 @@ const AddBlog = () => {
         console.log(res.data);
         console.log(res?.data?.data?.display_url);
 
-
-        // ======
+         // ======
         data.photo = res?.data?.data?.display_url;
         data.status = 'draft';
         console.log(data);
