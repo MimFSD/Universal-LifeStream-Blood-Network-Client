@@ -7,16 +7,16 @@ import Swal from "sweetalert2";
 const CreateRequest = () => {
     const { user } = useAuth();
 
-    // //  sign up form 
+        // //  sign up form 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const axiosSecure = useAxiosSecure();
 
     const onSubmit = async (data) => {
-        // Add the extra property inside the data
+           // Add the extra property inside the data
         data.donation_status = "pending";
         console.log(data);
 
-        // send data to backend
+           // send data to backend
         const createRequest = await axiosSecure.post('/create_all_requests', data);
         console.log(createRequest.data);
         if(createRequest.data.insertedId){
@@ -30,9 +30,9 @@ const CreateRequest = () => {
         }
     }
 
-    // ===========================================
+             // ===========================================
 
-    // showing division
+        // showing division
     const [divisions, setDivisions] = useState([]);
 
     // default division
