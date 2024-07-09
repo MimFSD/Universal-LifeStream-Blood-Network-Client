@@ -1,6 +1,17 @@
 # Website Name: Blood Chain
 ### Website Link: https://donation-blood-auth.web.app/
 
+
+# Purpose of the application: 
+<h5> # The purpose of the Blood Donation Application is to create a user-friendly platform that
+facilitates blood donation activities. The application will connect donors with those in
+need of blood, promoting a seamless and efficient donation process.</h5>
+
+<h5> # The application will include features for use(donor) registration, blood donation
+requests, donor management, content management, and role-based access control. It
+will be built using the MERN stack (MongoDB, Express.js, React, Node.js).</h5> 
+
+
 ## Additional Features 
 The website mainly divided three key role such as donor role, volunteer role and admin role. Let's know details about three different role - 
 1. Donor Role
