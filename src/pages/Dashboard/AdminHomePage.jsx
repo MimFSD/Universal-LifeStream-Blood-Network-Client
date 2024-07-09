@@ -25,7 +25,7 @@ const AdminHomePage = () => {
     return (
         <div className="my-8">
             <div className="w-[92%] mx-auto flex justify-center items-center bg-green-700 py-28 rounded-xl mb-6">
-                <h2 className="text-white text-4xl md:text-5xl font-bold text-center">Hello, Tanvir ! Welcome !</h2>
+                <h2 className="text-white text-4xl md:text-5xl font-bold text-center">Hello, Mim ! Welcome !</h2>
             </div>
             <div className="w-[92%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="py-12 px-8 bg-[#9dd9d2] text-center rounded-xl">
