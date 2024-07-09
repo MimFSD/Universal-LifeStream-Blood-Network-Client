@@ -28,6 +28,7 @@ const Footer = () => {
                     <a className="link link-hover">Press kit</a>
                 </nav>
                 <nav>
+                    
                     <h6 className="footer-title">Legal</h6>
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
@@ -36,6 +37,7 @@ const Footer = () => {
             </footer>
             <footer className="footer footer-center p-4 bg-[#8d0801] text-base-content mt-24">
                 <aside>
+
                     <p className='text-white'>Copyright © 2024 - All right reserved by Blood Chain Organization</p>
                 </aside>
             </footer>
