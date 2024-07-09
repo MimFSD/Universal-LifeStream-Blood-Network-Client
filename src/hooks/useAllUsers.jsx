@@ -3,7 +3,6 @@ import useAxiosSecure from "./useAxiosSecure";
 
 const useAllUsers = () => {
     const axiosSecure = useAxiosSecure();
-
     // tan stack query 
     const { refetch, data: allUsers=[]} = useQuery({
         queryKey: ['allUsers'],
@@ -14,5 +13,4 @@ const useAllUsers = () => {
     })
     return [allUsers, refetch]
 };
-
 export default useAllUsers;
