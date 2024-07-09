@@ -32,12 +32,13 @@ const AllUsers = () => {
             })
     }
 
+
     const handleVolanteer = id => {
         axiosSecure.patch(`/make_role_volunteer/${id}`)
             .then(res => {
                 console.log(res.data);
                 if (res.data.modifiedCount > 0) {
-                    // refetch data
+             // refetch data
                     refetch();
                 }
             })
@@ -47,7 +48,7 @@ const AllUsers = () => {
             .then(res => {
                 console.log(res.data);
                 if (res.data.modifiedCount > 0) {
-                    // refetch data
+                 // refetch data
                     refetch();
                 }
             })
