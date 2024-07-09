@@ -36,6 +36,7 @@ const Banner = () => {
                         height: '100vh'
                     }}>
                         {/* Dark overlay */}
+
                         <div style={{
                             position: 'absolute',
                             top: 0,
@@ -62,6 +63,7 @@ const Banner = () => {
                         height: '100vh'
                     }}>
                         {/* Dark overlay */}
+                        
                         <div style={{
                             position: 'absolute',
                             top: 0,
