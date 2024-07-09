@@ -13,6 +13,7 @@ const Dashboard = () => {
     useEffect(() => {
         axiosSecure(`/user_data/${user?.email}`)
             .then(res => {
+
                 setRole(res.data.role);
             })
     }, [user?.email])
@@ -93,6 +94,7 @@ const Dashboard = () => {
                 </ul>) : <></>}
 
             </div>
+
 
             {/* Dashboard contents  */}
             <div className='w-full lg:w-[80%] lg:ml-[20%] mb-4 lg:mb-0'>
