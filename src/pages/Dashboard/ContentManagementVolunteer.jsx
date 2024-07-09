@@ -27,7 +27,6 @@ const ContentManagementVolunteer = () => {
         }
     };
     // console.log(requestList);
-
     return (
         <div className="my-6">
             <div className="w-[90%] mx-auto mt-10 flex justify-end">
@@ -51,6 +50,7 @@ const ContentManagementVolunteer = () => {
                         <div className="card-body">
                             <h2 className="card-title font-bold">{content.title}</h2>
                             {/* <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content }}></div> */}
+                            
                             <div className="flex-grow">
                                 {content.detail_content.length > 170 ? <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content.slice(0, 170) }}></div> : <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content }}></div>}
                             </div>
@@ -59,6 +59,7 @@ const ContentManagementVolunteer = () => {
                                     <p>{content.detail_content.slice(0, 200)}</p> :
                                     <p>{content.detail_content}</p>}
                             </div> */}
+
                             <div className="flex justify-end mt-2">
                                 <Link to={`/dashboard/edit_blog/${content._id}`}>
                                     <button className="btn bg-[#ffd60a] text-black">Edit Blog</button>
