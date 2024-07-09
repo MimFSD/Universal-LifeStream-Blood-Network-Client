@@ -31,7 +31,7 @@ const AllBloodDonationRequest = () => {
                         showConfirmButton: false,
                         timer: 1500
                     })
-                    
+
                     // refetch request data
                     refetch();
                 }
@@ -51,7 +51,7 @@ const AllBloodDonationRequest = () => {
                         showConfirmButton: false,
                         timer: 1500
                     })
-                    // refetch requests data
+                      // refetch requests data
                     refetch();
                 }
             })
