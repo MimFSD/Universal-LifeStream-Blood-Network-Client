@@ -11,9 +11,11 @@ const AllBloodDonationRequest = () => {
     // const [sortingData, setSortingData] = useState([]);
     // console.log(allRequests);
 
+
     useEffect(() => {
         setRequestList(allRequests);
     }, [allRequests])
+
 
     // let's update donor status to done
     const changeStatusDone = id => {
@@ -29,6 +31,7 @@ const AllBloodDonationRequest = () => {
                         showConfirmButton: false,
                         timer: 1500
                     })
+                    
                     // refetch request data
                     refetch();
                 }
