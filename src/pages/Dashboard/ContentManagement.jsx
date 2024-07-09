@@ -25,6 +25,7 @@ const ContentManagement = () => {
             })
     }
 
+    
     const handleUnpublish = id => {
         axiosSecure.patch(`/update_blog_status_publish/${id}`)
             .then(res => {
@@ -54,7 +55,7 @@ const ContentManagement = () => {
                                 text: "The blog successfully deleted",
                                 icon: "success"
                             });
-                            // refetch
+                     // refetch
                             refetch();
                         }
                     })
@@ -79,7 +80,7 @@ const ContentManagement = () => {
     };
     // console.log(requestList);
 
-    
+
     return (
         <div className="my-6">
             {/* <h2 className="text-4xl font-bold text-[#ff0054] text-center">Content Management</h2> */}
