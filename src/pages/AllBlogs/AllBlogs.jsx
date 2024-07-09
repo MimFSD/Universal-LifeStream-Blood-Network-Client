@@ -27,14 +27,17 @@ const AllBlogs = () => {
                             <div className="card-body">
                                 <h2 className="card-title font-bold text-black">{content.title}</h2>
                                 {/* <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content }}></div> */}
+                                
                                 <div className="flex-grow">
                                     {content.detail_content.length > 170 ? <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content.slice(0, 170) }}></div> : <div contentEditable='false' dangerouslySetInnerHTML={{ __html: content.detail_content }}></div>}
                                 </div>
+
                                 {/* <div className="flex-grow">
                                 {content.detail_content.length > 200 ?
                                     <p>{content.detail_content.slice(0, 200)}</p> :
                                     <p>{content.detail_content}</p>}
                             </div> */}
+
                                 <div className="flex justify-end mt-2">
                                     <Link to={`/blog_details/${content._id}`}>
                                         <button className="btn bg-[#264653] text-white">View Details</button>
