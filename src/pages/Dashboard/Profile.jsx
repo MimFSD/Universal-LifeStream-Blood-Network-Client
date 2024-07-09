@@ -47,7 +47,6 @@ const Profile = () => {
             setEditable(false)
         }
     }
-
     // fetching division names
     useEffect(() => {
         fetch('/DivisionToDistrict.json')
