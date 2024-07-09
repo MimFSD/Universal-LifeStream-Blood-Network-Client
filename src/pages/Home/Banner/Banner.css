@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Change the color of Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ff0000; /* Bright red color */
+}
+
+/* Optionally, you can add hover effects */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: #ff6666; /* Lighter red color on hover */
+}
